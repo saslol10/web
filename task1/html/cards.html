@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/web/task1/css/normalize.css" />
+    <link rel="stylesheet" href="/web/task1/css/style.css">
+</head>
+<body>
+<header>
+    <div class="header-block">
+        <div class="header-block-main">
+            <div class="header-block-master">
+
+                <div class="header-block-left">
+                    <span  class="header-block-logo">
+                      <img class="header-block-img-logo" src="/web/task1/img/main-logo.svg">
+                    </span>
+
+                    <div class="header-block-tab">
+                        <nav class="header-block-tab-nav">
+                            <span class="header-block-choice header-block-study" status="non-active">
+                                <a href="./index.html" class="header-block-link text__font" status="non-active">
+                                    <p class="header-block-text">Финтех курсы</p>
+                                </a>
+                            </span>
+                            <span class="header-block-choice header-block-internship" status="non active">
+                                <a href="./index.html" class="header-block-link text__font" status="non-active">
+                                    <p class="header-block-text">Стажировки</p>
+                                </a>
+                            </span>
+                            <span class="header-block-choice header-block-event" status="non-active">
+                                <a href="./index.html" class="header-block-link text__font" status="non-active" >
+                                    <p class="header-block-text">Мероприятия и партнерства</p>
+                                </a>
+                            </span>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="header-block-right">
+                    <span class="header-block-choice  header-block-login">
+                        <a href="./index.html"  class="header-block-login header-block-link text__font">
+                            <span class="header-block-text">Войти</span>
+                        </a>
+                    </span>
+                    <span class="header-block-choice header-block-img-login">
+                        <img class="header-block-img-login" src="/web/task1/img/login.png">
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+<div>
+    <main>
+<!--Карточки -->
+        <section class="default-block-inner-button">
+                <button class="default-block-button text__font main-base-text" onclick="defaultOnClick()">Тест</button>
+        </section>
+        <!-- Создание карточки-->
+        <section class="form-block">
+            <div class="form-block-card">
+                <form id="card-block"  >
+                    <label>
+                        <input class="form-block-input text__font text__block text__size" type="text" name="name" id="name" placeholder="Имя" required autofocus>
+                    </label>
+
+                    <label>
+                        <input class="form-block-input text__font text__block text__size" type="text" name="image" id="image" placeholder="Ссылка на изображение" required>
+                    </label>
+
+                    <label>
+                        <textarea class="form-block-textarea text__font text__block text__size" type="text" name="description" id="description" placeholder="Описание" required></textarea>
+                    </label>
+
+                    <label>
+                        <input class="form-block-input text__font text__block text__size" type="number" name="code" id="code" placeholder="Код товара" required>
+                    </label>
+
+                    <label>
+                        <input class="form-block-input text__font text__block text__size" type="text" name="provider" id="provider" placeholder="Поставщик" required>
+                    </label>
+                    <div class="card-block-button-d">
+                        <button  class="card-block-button-h text__font text__block text__size" type="submit" >Создать</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Все карточки -->
+        <section class="all-card-block">
+            <p class="form-card-block-title text__font text__block text__h">Все текущие карточки</p>
+            <div id ="cartContainer"  class="showcase-block">
+                <div id="preloader">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+<footer>
+    <div class="footer-block">
+        <div class="footer-block-info">
+            <div class="footer-block-left">
+                <p class="footer-block-text text__font">© 2022 «Тинькофф Образование»</p>
+            </div>
+            <div class="footer-block-right">
+                <p class="footer-block-text text__font">По вопросам пишите на
+                    <span class="footer-block-text-link text__font">edu@tinkoff.ru</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/web/task1/js/main.js"></script>
+
+</body>
+</html>
